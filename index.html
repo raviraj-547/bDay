@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday! 🎉</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Floating Balloons -->
+    <div class="balloons-container">
+        <div class="balloon balloon-1">🎈</div>
+        <div class="balloon balloon-2">🎈</div>
+        <div class="balloon balloon-3">🎈</div>
+        <div class="balloon balloon-4">🎈</div>
+        <div class="balloon balloon-5">🎈</div>
+        <div class="balloon balloon-6">🎈</div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="cake-emoji">🎂</div>
+                <h1 class="birthday-title">
+                    <span class="title-line">Happy</span>
+                    <span class="title-line accent">Birthday!</span>
+                </h1>
+                <div class="birthday-person">
+                    <span class="dear-text">Dear</span>
+                    <span class="name-highlight" id="birthday-name">Kanishk</span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Section -->
+        <section class="photo-section">
+            <div class="photo-frame">
+                <div class="photo-glow"></div>
+                <img src="Screenshot 2026-01-21 224932.png" alt="Birthday Photo" class="birthday-photo"
+                    id="birthday-photo">
+                <div class="photo-decoration top-left">✨</div>
+                <div class="photo-decoration top-right">⭐</div>
+                <div class="photo-decoration bottom-left">🌟</div>
+                <div class="photo-decoration bottom-right">✨</div>
+            </div>
+        </section>
+
+        <!-- Age Section -->
+        <section class="age-section">
+            <div class="age-card">
+                <div class="age-label">Turning</div>
+                <div class="age-number" id="age-display">
+                    <span class="age-digit" id="age-value">?</span>
+                </div>
+                <div class="age-text">Years of Awesome!</div>
+            </div>
+        </section>
+
+        <!-- Age Input Modal -->
+        <div class="age-modal" id="age-modal">
+            <div class="age-modal-content">
+                <div class="modal-emoji">🎂</div>
+                <h2>Welcome to Your Special Day!</h2>
+                <p>How old are you turning today?</p>
+                <div class="age-input-wrapper">
+                    <input type="number" id="age-input" min="1" max="150" placeholder="Enter age" autofocus>
+                    <button id="age-submit" class="age-submit-btn">🎉 Let's Celebrate!</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wishes Section -->
+        <section class="wishes-section">
+            <div class="wishes-card">
+                <div class="wishes-header">
+                    <span class="wishes-icon">💝</span>
+                    <h2>Birthday Wishes</h2>
+                    <span class="wishes-icon">💝</span>
+                </div>
+                <div class="wishes-content">
+                    <p class="wish-text" id="wish-message">
+                        On this special day, I want you to know how much you mean to me.
+                        May your birthday be filled with endless joy, laughter, and all the
+                        things that make you happy!
+                    </p>
+                    <p class="wish-text">
+                        You deserve all the love and happiness in the world.
+                        Here's to another amazing year of adventures, dreams coming true,
+                        and making beautiful memories together! 🎊
+                    </p>
+                    <div class="signature">
+                        <span>With all my love,</span>
+                        <span class="signature-name">techAmigos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      
+
+        <!-- Birthday Countdown / Celebration -->
+        <section class="celebration-section">
+            <div class="celebration-content">
+                <div class="party-emoji">🎉</div>
+                <h2>Let's Celebrate!</h2>
+                <button class="celebrate-btn" id="celebrate-btn">
+                    <span>🎊</span> Click for Surprise! <span>🎊</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="birthday-footer">
+            <div class="footer-hearts">
+                <span>❤️</span>
+                <span>💖</span>
+                <span>💝</span>
+                <span>💕</span>
+                <span>❤️</span>
+            </div>
+            <p>Made with love for your special day 🎂</p>
+            <div class="footer-stars">✨ 🌟 ⭐ 🌟 ✨</div>
+        </footer>
+    </main>
+
+    <!-- Audio (optional - add your own birthday song) -->
+    <audio id="birthday-audio" loop>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
